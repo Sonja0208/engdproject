@@ -1,0 +1,1215 @@
+{
+  "technology": [
+    {
+      "id": "01-0",
+      "cluster": "01 Simulation and Modelling",
+      "name": "Building Information Modeling",
+      "definition": "Building Information Modeling (BIM) is a digital representation of physical and functional characteristics of a facility. A BIM is a shared knowledge resource for information about a facility forming a reliable basis for decisions during its life-cycle; defined as existing from earliest conception to demolition (National BIM Guide for Owners, 2017).",
+      "general_requirements": "<br> Access to laptop <br> Access to internet <br> License BIM software and tools <br>Trained employee <br>Hardware requirements <br> Owner’s project BIM goals <br> BIM Project Execution Plan (PxP) <br>  Level of Development (LOD) <br> Roles and responsibilities of key project stakeholders with respect to information modeling <br> Compatible with the Owner's computer platform requirement <br> Capable of supporting current and legacy file formats <br> Agnostic <br> Able to support open, consensus standards to maximize future compatibility",
+      "functions": "<br> Existing Conditions <br> Design Authoring <br>Design Review <br>Cost Estimating <br>Site Analysis – Development <br>Site Utilization – For Construction <br> Codes and Standards Compliance <br> Asset Management <br>Project schedule <br>Material inventories",
+      "examples": " <br> openBIM <br>Revit "
+    },
+    {
+      "id": "01-00",
+      "cluster": "01 Simulation and Modelling",
+      "name": "Big data",
+      "definition": "Big data is a broad term for a complex and substantial collection of data, which needs advanced engineering strategies and analytics systems to process, store and manage. The term ‘‘big data’’ does not simply mean ‘‘a big amount’’ of data containing abundant information, which would be called ‘‘very large data’’ or ‘‘massive data’’. Essentially, ‘‘big data’’ stands for the data which are generally unstructured, heterogeneous, and therefore extremely complex to deal with (Li et al., 2023).",
+      "general_requirements": "<br> Real-time or nearly real-time analysis <br>Data security, privacy and protection <br> Data quality of construction industry datasets <br> Structured data <br>Development of an information management platform that manages all facets of a project’s operation <br>Internet connectivity",
+      "functions": "<br> Big data engineering (Data Acquisition, Data processing, Data storage, Database, Pipeline – to build complete and fluent workflow) <br>  Big data analytics (Prediction, Classification, Clustering, Inference, Optimization",
+      "examples": " <br> Hadoop <br>Spark <br>Apache Storm <br>Flink <br>Kafka Streams <br>Samza"
+    },
+    {
+      "id": "01-000",
+      "cluster": "01 Simulation and Modelling",
+      "name": "Artificial Intelligence",
+      "definition": "Artificial intelligence denotes the science and engineering of creating intelligent machines that exhibit reasoning, learning, knowledge, communication, perception, planning, and the ability to move and operate objects (Darko et al., 2020).",
+      "general_requirements": "<br> Skilled and trained workforce <br> Available data, of suitable quality, and at the right level of detail to support the business problem <br> Data storage system <br> High computing capacity <br> Networking infrastructure <br> Data security and protection",
+      "functions": "<br> Expert Systems <br>Problem Solving and Planning <br>Natural Language Processing <br>Controlling of robots <br>Computer Vision <br> Machine learning <br>Genetic Algorithm Optimization <br> Artificial Neural Networks <br>Fuzzy logic <br> Nonmonotonic reasoning",
+      "examples": " <br> openAI <br> Chatbot (ChatGPT) "
+    },
+    {
+      "id": "01-01",
+      "cluster": "01 Simulation and Modelling",
+      "name": "Extended Reality",
+      "definition": "Extended reality (XR) is the umbrella term for a spectrum of immersive and interactive technologies. It encompasses augmented reality (AR), mixed reality (MR), and virtual reality (VR) (J. Link, 2022). Virtual Reality is a computer technology that gives users an illusion of being immersed in a virtual environment. Fundamentally, VR enables a computer simulation of real situation where human subject may interact with the virtual environment . AR is regarded as a channel between VR and telepresence as it magnifies realism rather than substitute it . AR can be defined as the amplification of the real environment with data from the virtual environment, that is, augmenting reality with virtuality (“Automation and Robotics in the Architecture, Engineering, and Construction Industry,” 2022). Mixed reality is the combination of augmented and virtual reality, creating spaces for the interaction of objects, people and virtual scenarios with the real ones (F. Munoz-La Rivera; et al., 2021).",
+      "general_requirements": "<br> VR or AR glasses/headset <br> Display devices (tablets)  <br>Skilled workforce <br> 5G networks <br>Powerful desktop or laptop PC",
+      "functions": "<br> Virtual learning and training environment <br>Site layout visualization <br>Simulation of hazardous construction scenarios <br>Expedite construction activities <br>Usability reviews in the early stages of the project  <br>Work interactively in real-time and at scale <br>Coordination of systems and their components <br>Identifying spaces through virtual labelling  <br>Facilitating the logistics of materials and equipment on-site",
+      "examples": " <br> Trimble SiteVision <br> NVIDIA CloudXR"
+    },
+    {
+      "id": "01-02",
+      "cluster": "01 Simulation and Modelling",
+      "name": "Geographic information system",
+      "definition": "Geographic Information System (GIS) is a computer-based tool used for capturing, storing, quarrying, analyzing and displaying the geographic information. GIS activities may be grouped into spatial and attribute data management, data display, data exploration, data analysis and modeling (V. K. Bansal, 2007). Spatial or spatio-temporal statistical modelling for the analysis of patterns and exploration of relationships, which are primarily collected by geodesy methods. One of the primary products of ﬁeld geodesy work is topographic maps with large spatial scales indicating terrain characteristics, infrastructure, buildings and land cover. After digitization of topographic maps, spatial data depicting  natural attributes become data layers of GIS (Song et al., 2017).",
+      "general_requirements": "<br>Computer system<br> GIS software <br> Trained workforce <br> Required level and amount of building information in the geospatial environment <br> City Geography Markup Language (CityGML) or similar standards",
+      "functions": "<br> Capturing geographic information <br> Storing geographic information <br> Quarrying geographic information <br> Analyzing geographic information <br> Displaying the geographic information <br> Photo documentation",
+      "examples": " <br> ArcGIS <br> QGIS 3 <br> Hexagon Geomedia <br> MapInfo Professional"
+    },
+    {
+      "id": "01-03",
+      "cluster": "01 Simulation and Modelling",
+      "name": "Photogrammetry",
+      "definition": "Photogrammetry is the art and science of extracting 3D information from photographs. The process involves taking overlapping photographs of an object, structure, or space, and converting them into 2D or 3D digital models. There are two primary types of photogrammetry: aerial and close-range (Autodesk, n.d.).",
+      "general_requirements": "<br> Cameras <br> Photogrammetry software<br> Data storage <br> Reduced static and dynamic occlusion  <br> Internet access <br> Photogrammetric calibration, which requires prerequisite knowledge of the physical object <br> Analyzed elements to be visible from multiple (at least two) diﬀerent points of view",
+      "functions": "<br> Create topographic maps <br>Create meshes <br> Create point clouds (digital reconstruction) <br>Create drawings based on the real-world <br>Obtain geometric properties of objects and their spatial location",
+      "examples": " <br> AutoDesk ReCap <br>Agisoft Metashape<br> RealityCapture <br>PIX4Dmapper <br>ContextCapture  <br>3DF Zephyr <br>DataXquad  "
+    },
+    {
+      "id": "01-04",
+      "cluster": "01 Simulation and Modelling",
+      "name": "Simulation models and tools",
+      "definition": "Building simulation is a way to test how elements of building design will perform under real-world conditions. This is done using a mathematical model that re-creates conditions in a virtual environment (N. Khan, 2023).",
+      "general_requirements": "<br> Problem formulation <br>Collection of information and documentation of assumptions <br>Validation of assumptions <br>Simulation Execution Approach <br>Simulation Result Representation <br>Integration Requirements <br>Complete Project Modeling <br>Model Reusability Support <br>Validation of programmed model<br>User Friendly Software",
+      "functions": "<br> Replicate real-world scenarios <br>Predict outcomes <br>Project modeling and optimization",
+      "examples": " <br> Autodesk <br>AnyLogic <br>Simcad <br>Powesim Studio <br>MathWorks Simulation Software"
+    },
+    {
+      "id": "02-01",
+      "cluster": "02 Digitalization and Visualization",
+      "name": "Cloud computing",
+      "definition": "Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and  services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. This cloud model is composed of five essential characteristics, three service models, and four deployment models (The NIST Definition of Cloud Computing, n.d.).",
+      "general_requirements": "<br> Application Performance Monitoring (APM) tools <br>Cloud provider <br>Service Level Agreement with cloud providers <br>Data privacy and security <br>Defined access level for the different category of stakeholders involved in the production and management of building data <br>Internet connectivity <br>Skilled workforce",
+      "functions": "<br> On-demand scalability of computing resources <br>Providing real-time access to data from any location <br>Secured platform <br> Massive storage for acquired data <br>Real time collaborative construction environment <br>Integration of construction supply chains",
+      "examples": " <br> Google Cloud <br>Oracle Cloud <br>IBM Cloud <br>Amazon Web Services <br>Microsoft Azure"
+    },
+    {
+      "id": "02-02",
+      "cluster": "02 Digitalization and Visualization",
+      "name": "Automated regulation checking and audits",
+      "definition": "The compliance checking process occurs constantly throughout all phases of a project lifecycle in the AECO (Architecture, Engineering, Construction, and Operation) domain and affects all aspects of the lifecycle. There are essentially two main ingredients or data sources in a typical automated compliance checking (ACC) process, namely: <br> 1. The building model, a digital representation of the design data, which is subject to audit for compliance. <br>2. Normative knowledge, a computable representation of normative provisions stipulated by codes and standards, which is the baseline for the audit (Amor & Dimyadi, 2021).",
+      "general_requirements": "<br> BIM-enrichment techniques (make a BIM model more readily processable for speciﬁc applications such as compliance checking by automatically adding required objects and attributes) <br> Modelling and representation of normative provisions as computable rules by knowledge acquisition and knowledge engineering  <br> BIM standards for the models Consenting authorities will be accepting <br> Correct and consistent classiﬁcation of information<br> Form of contract to ensure the extra modelling effort is recognized and compensated when ACCS is in place <br> Computer interpretable format of codes and standards need to be equivalent to the original paper-based versions <br> Process notation to direct the checking process",
+      "functions": "<br> Automate the review processes of engineering designs according to regulations and design codes <br>Processes of control and monitoring of construction projects and asset management <br>Quality assurance and quality control",
+      "examples": " <br> not available "
+    },
+    {
+      "id": "02-03",
+      "cluster": "02 Digitalization and Visualization",
+      "name": "Common Data Environment",
+      "definition": "The common data environment (CDE) is a central repository where construction project information is housed. The contents of the CDE are not limited to assets created in a ‘BIM environment’ and it will therefore include documentation, graphical model and non-graphical assets (R. McPartland, 2016).",
+      "general_requirements": "<br> Domain-specific approach (model authors have full access only to the domain specific sub-model they are responsible for) <br>Federated model approach (provides a central coordination model) <br> Quality check of the model for compliance with the standards and codes (quality gate) <br>Agreed project standards (set of legally binding requirements for the way data is stored)  <br>Author's awareness about project standards and basic knowledge on data handling <br>Employer's Information Requirements <br>Connection to BIM authoring tool <br> Locking mechanism to handle simultaneous data access <br> BIM Collaboration Format (BFC) <br> Well-defined workflow <br>Unique identifier for every “information container” and a standard naming convention <br>Assigning a “suitability status” to all data <br>Controlling data revisions to ensure past revisions aren’t actively being used <br>A server for your project, or perhaps an extranet or some other form of file-based retrieval system",
+      "functions": "<br> Storage, retrieval and transfer of information models <br>Central data management tool <br>Connecting teams, models and project data in one environment <br>Providing one central data source for projects ",
+      "examples": " <br> Trimble Connect <br>  Sitemark <br> Aeroscan  <br> Doxel"
+    },
+    {
+      "id": "02-04",
+      "cluster": "02 Digitalization and Visualization",
+      "name": "Edge computing",
+      "definition": "The core concept of edge computing is that the location of computing is close to the source of data and closer to users.  Edge computing is also a kind of distributed computing pattern: collected data can be processed at the smart gateway which is closer to users, without uploading a large amount of data to the cloud center. Edge computing is a favorable complement and effective extension of cloud computing. Cloud computing needs edge computing nodes to pre-process data, while edge computing needs massive storage and strong computing capacity of cloud computing as its support to break the bottleneck of network bandwidth and latency (Ning et al., 2020).",
+      "general_requirements": "<br> Included network related metrics and performance (such as high bandwidth and low latency communication infrastructure.) <br>Defined dependability attributes (non-functional requirements, such as Quality of Service, reliability, availability, security, safety, maintainability, integrity, etc.) <br>Computing resources: processing power, memory, storage capacity <br>Edge computing platform deployment <br>Maintenance of edge computing platform <br> Virtualization technology <br>Distributed storage management system",
+      "functions": "<br> Facilitate smart IoT applications <br>Execution of various container-based applications in proximity of the construction site <br>Relieving pressure of network bandwidth and data center <br>Enhancing the response speed of user request services <br>Improving the users’ authority to control private data ",
+      "examples": " <br> Edge computing platform for internet users (AWS Greengrass, Microsoft Azure IoT, Baidu BIE, etc.) <br>Edge computing platform for Industrial Internet of Things (GE, Siemens, ABB, Schneider, Bosch)"
+    },
+    {
+      "id": "03-01",
+      "cluster": "03 Physical/Automation",
+      "name": "Robots",
+      "definition": "Robots are highly automated devices that carry out physical activities in the real world. Robots are used for highly specialized tasks, taking shapes most suitable for their use and not necessarily the humanoid shape, and they interact with the environment using sensors and actuators.(Abioye et al., 2021). Single-Task Construction Robots are systems that support workers on the construction site in executing one specific construction process or task (e.g., digging, concrete levelling, painting) or by completely substituting the physical activity of human workers necessary to perform this one process or task. The processes and tasks assisted or executed by STCRs are in most cases relatively profession or craft specific. (Bock & Linner, 2016).",
+      "general_requirements": "<br> Working direction of the system (along the facade, from overhead, etc.) <br>Mobility approach (omnidirectional mobile platform, rail guided, fixed, etc.) <br> Kinematic structure (number of degrees of freedom [DoFs], geometric organization of links, etc.) <br> End-effector design (level of inbuilt dexterity, etc.) <br> Modularity of the system  (exchangeability of end-effectors, drive units, and other parts) <br> Control mode (remote controlled/supervised, automatic, human–robot cooperative) <br>Integrated with other construction processes, which demands safety measurements <br> Skilled workforce  <br>Robot-oriented design of the building systems and components <br>Use of such systems to be considered with the conventional job site installation (e.g. parking or recharging stations for robots <br>Compatible with or integrated with upstream or downstream processes ",
+      "functions": "<br> Automated Site-Measuring and Construction Progress Monitoring  <br>Earth and foundation work robots <br>Robotized conventional construction machines (dumpers, haulers, excavators, etc.) <br>Reinforcement production and positioning <br>Automated/robotic 3D concrete structure production on the site <br>Automated/robotic 3D truss/steel structure assembly on the site<br>Bricklaying robots <br>Concrete distribution robots <br>Concrete levelling and compaction robots <br>Concrete finishing robots <br>Site logistics robots  <br>Aerial robots for building structure assembly <br>Swarm robotics and self-assembling building structures <br>Robots for positioning of components (crane end-effectors) <br>Steel welding robots <br>Facade installation robots  <br>Tile setting and floor finishing robots <br>Facade coating and painting robots <br>Humanoid construction robots  <br>Exoskeletons wearable robots and assistive devices  <br>Interior finishing robots <br>Fireproof coating robots <br>Service, maintenance, and inspection robots <br>Renovation and recycling robots <br>Mechanical support to worker's body <br>Helping workers to lift heavy loads",
+      "examples": " <br> RICAL – Robotics and Intelligent Construction Automation Laboratory <br> Irma3D <br> Clearpath Robotics: Warthog unmanned ground vehicle  <br>Clearpath Robotics: Husky unmanned ground vehicle <br>Clearpath Robotics: Ridgeback omnidirectional platform <br>Clearpath Robotics: Dingo indoor robotic platform <br>Clearpath Robotics: Boxer indoor mobile robots <br>PLiBOT indoor <br>PLiBOT outdoor <br> GGR Group: Mini Spider Cranes <br>GGR Group: Access Platform <br>GGR Group: Special Trailer Cranes <br>GGR Group: Telehandlers <br>GGR Group: Glazing robot <br> GGR Group: RoboLift <br>  Ascending Technologies <br> DJI Phantom 4 <br> RiCOPTER <br> Parrot <br> Autel <br> Atmos <br>Avular <br>Hilti Exoskeleton <br>Fortis Exoskeleton"
+    },
+    {
+      "id": "03-02",
+      "cluster": "03 Physical/Automation",
+      "name": "Internet of things",
+      "definition": "Internet of things can be defined as a network of interconnected physical devices, like sensors, drones, 3D laser scanner, wearable and mobile devices, radio frequency identification devices (RFID), which is attached to construction resources to collect real-time data about the operational status of the project (Pan & Zhang, 2021). The three-layered architecture of IoT consists of 1) Perception layer,2) Network layer, and 3) Application layer. The perception layer which includes the perception nodes and perception networks is integrated into the target and is responsible for sensing and data collection. The network layer is responsible for data transportation, which is the most important layer in the architecture, as it is the convergence of various devices (e.g. gateway) and communication infrastructure. Finally, the application layer is the top layer which end users interact with. It receives the data transmitted and presents to users for further services (Jia et al., 2019).",
+      "general_requirements": "<br> 5G wireless communication <br>Sensors <br>Mobile devices br>Semantic web and relational database (one of the most promising methods to facilitate IoT deployment in the construction industry) <br>Standards for information integration and management (to sort large and heterogeneous data sets into usable order) <br>Network layer: Wi-fi; Bluetooth; Zigbee; Long-Term Evolution (LTE). <br>User Interface",
+      "functions": "<br> Monitoring products and processes <br>Facility management <br>Localization <br>Resources tracking",
+      "examples": " <br> Cisco <br> Verizon <br> Agile Vision"
+    },
+    {
+      "id": "03-03",
+      "cluster": "03 Physical/Automation",
+      "name": "Cyber-Physical Systems/Embedded Systems",
+      "definition": "Cyber-Physical Systems represent tight integration of physical systems with their virtual representations to develop context-aware integrated analytical systems able to adapt to changes in the physical construction site/facility. Such systems bridge the virtual world with the physical world using sensors/data acquisition technologies and actuators to form closed-loop or feedback systems. CPS consist of two principal elements, the “physical to cyber” bridge and the “cyber to physical” bridge (Anumba et al., 2021).",
+      "general_requirements": "<br> Data capture systems <br>Internet and wireless communication networks <br>Local database and database server, and also enables processing of these data via control applications <br>Application programming interface (API, installed on portable devices for easy communication with the construction workers) <br>Real-time exchange of information",
+      "functions": "<br> Bi-directional coordination between virtual models and physical construction <br> Real time monitoring system <br> Component tracking",
+      "examples": " <br> not available "
+    },
+    {
+      "id": "03-04",
+      "cluster": "03 Physical/Automation",
+      "name": "Laser Scanners",
+      "definition": "Laser scanning, also known as high-deﬁnition surveying (HDS) or reality capture, is a means of using a laser to map an area with high accuracy. The acquired data provide construction professionals with what is known as a “point cloud”, which is a database connecting points in a 3D coordinate system.  3D point cloud data from 3D laser scanners are able to capture the surface geometries of target objects in an accurate and efﬁcient manner, and provide accurate and fast records of the 3D geometries of construction-related objects (Almukhtar et al., 2021).",
+      "general_requirements": "<br> Maximum range (m) <br>Minimum range (m) <br>Field of view (degree) <br>Scanning speed <br>Scan duration (seconds) <br>Scan accuracy (mm) <br>Laser beam diameter (mm) <br>Data storage <br>Station points locations on site <br>Determined required point cloud data quality for each speciﬁc application to facilitate the acquisition of point cloud data <br>Software for Exporting Scanning Data",
+      "functions": "<br> Collect three-dimensional (3D) coordinates of existing buildings <br>Restore original building information into 3D models",
+      "examples": " <br> Trimble TX8 <br> Intel Real Sense <br> FARO Focus Laser Scanners <br> Measurement in Motion"
+    },
+    {
+      "id": "03-05",
+      "cluster": "03 Physical/Automation",
+      "name": "Sensors",
+      "definition": "A sensor is a device or transducer that receives information about various physical effects, such as mechanical, optical, electrical, acoustic, and magnetic effects and converts that information into electrical signals. These electrical signals can be acted upon by the control unit (Chen, 2003). Research developed around specific capabilities of sensing devices can be broadly classified, non-exhaustively, into the following categories, detailed with illustrative examples (Louis & Dunston, 2018): <br>1. Vision-based techniques: this class of methodologies uses cameras  <br>2. Ranging-based techniques: These techniques use light detection and ranging (LiDAR) and laser distance and ranging (LADAR) <br>3. Location-based tracking: This category of applications utilizes localization systems such as Global Positioning System (GPS) and ultrawide band (UWB)",
+      "general_requirements": "<br> Privacy and data security <br>raining and skills development for workforce  <br> Signal processing <br> Digital control and manipulation <br> External communication and bus interaction <br> Defined Range <br>Accuracy Class <br> Sophisticated controllers and algorithms are necessary for dexterity, precision, and repetition require signals to be interpreted quickly or even in real time",
+      "functions": "<br> Real-time positioning <br>Real-time data collection during operation <br>Equipment health monitoring <br>Work quality verification and remediation <br>Collision-free path planning <br>Equipment performance measurement <br>Effectively track and manage their assets like tools, equipment, materials and prefabricated building components  <br>Inventory management and theft prevention <br>Generate a description of the environment and the state of the robot system <br>Provide real-time health and safety results to construction personnel <br>Measure a wide variety of safety performance metrics, including blood oxygen, blood pressure, heart rate, proximity detection, respiratory rate, and worker location tracking <br>Access control",
+      "examples": " <br> GPS (basic, differential, kinematic) <br> RF/wi-ﬁ,bluetooth <br> RF/wide band <br>Laser indoor GPS <br>Magnetometers <br>Magnetic ﬁeld 6D positioning <br>Laser (tachymeters, trackers) <br> Optical trackers <br>Micro Electro Mechanical System based Inertial positioning <br>Camera positioning"
+    }
+  ],
+  "techlinkReqFor": [
+    {
+      "source": "02-01",
+      "target": "01-0"
+    },
+    {
+      "source": "03-02",
+      "target": "01-00"
+    },
+    {
+      "source": "03-05",
+      "target": "01-00"
+    },
+    {
+      "source": "02-01",
+      "target": "01-000"
+    },
+    {
+      "source": "01-0",
+      "target": "01-01"
+    },
+    {
+      "source": "02-01",
+      "target": "01-01"
+    },
+    {
+      "source": "02-04",
+      "target": "01-01"
+    },
+    {
+      "source": "02-01",
+      "target": "01-02"
+    },
+    {
+      "source": "01-0",
+      "target": "01-04"
+    },
+    {
+      "source": "01-0",
+      "target": "02-02"
+    },
+    {
+      "source": "02-01",
+      "target": "02-04"
+    },
+    {
+      "source": "01-000",
+      "target": "03-01"
+    },
+    {
+      "source": "01-04",
+      "target": "03-01"
+    },
+    {
+      "source": "03-05",
+      "target": "03-01"
+    },
+    {
+      "source": "01-0",
+      "target": "03-02"
+    },
+    {
+      "source": "01-00",
+      "target": "03-02"
+    },
+    {
+      "source": "02-01",
+      "target": "03-02"
+    },
+    {
+      "source": "02-04",
+      "target": "03-02"
+    },
+    {
+      "source": "03-05",
+      "target": "03-02"
+    },
+    {
+      "source": "01-0",
+      "target": "03-03"
+    },
+    {
+      "source": "03-02",
+      "target": "03-03"
+    },
+    {
+      "source": "03-05",
+      "target": "03-03"
+    },
+    {
+      "source": "02-01",
+      "target": "03-04"
+    },
+    {
+      "source": "02-04",
+      "target": "03-04"
+    },
+    {
+      "source": "01-00",
+      "target": "03-05"
+    }
+  ],
+  "techlinkReqTo": [
+    {
+      "source": "02-01",
+      "target": "01-0"
+    },
+    {
+      "source": "03-02",
+      "target": "01-00"
+    },
+    {
+      "source": "03-05",
+      "target": "01-00"
+    },
+    {
+      "source": "02-01",
+      "target": "01-000"
+    },
+    {
+      "source": "01-0",
+      "target": "01-01"
+    },
+    {
+      "source": "02-01",
+      "target": "01-01"
+    },
+    {
+      "source": "02-04",
+      "target": "01-01"
+    },
+    {
+      "source": "02-01",
+      "target": "01-02"
+    },
+    {
+      "source": "01-0",
+      "target": "01-04"
+    },
+    {
+      "source": "01-0",
+      "target": "02-02"
+    },
+    {
+      "source": "02-01",
+      "target": "02-04"
+    },
+    {
+      "source": "01-000",
+      "target": "03-01"
+    },
+    {
+      "source": "01-04",
+      "target": "03-01"
+    },
+    {
+      "source": "03-05",
+      "target": "03-01"
+    },
+    {
+      "source": "01-0",
+      "target": "03-02"
+    },
+    {
+      "source": "01-00",
+      "target": "03-02"
+    },
+    {
+      "source": "02-01",
+      "target": "03-02"
+    },
+    {
+      "source": "02-04",
+      "target": "03-02"
+    },
+    {
+      "source": "03-05",
+      "target": "03-02"
+    },
+    {
+      "source": "01-0",
+      "target": "03-03"
+    },
+    {
+      "source": "03-02",
+      "target": "03-03"
+    },
+    {
+      "source": "03-05",
+      "target": "03-03"
+    },
+    {
+      "source": "02-01",
+      "target": "03-04"
+    },
+    {
+      "source": "02-04",
+      "target": "03-04"
+    },
+    {
+      "source": "01-00",
+      "target": "03-05"
+    }
+  ],
+  "techlinkBenFrom": [
+    {
+      "source": "01-00",
+      "target": "01-0"
+    },
+    {
+      "source": "01-02",
+      "target": "01-0"
+    },
+    {
+      "source": "01-03",
+      "target": "01-0"
+    },
+    {
+      "source": "03-04",
+      "target": "01-0"
+    },
+    {
+      "source": "01-0",
+      "target": "01-00"
+    },
+    {
+      "source": "01-000",
+      "target": "01-00"
+    },
+    {
+      "source": "01-02",
+      "target": "01-00"
+    },
+    {
+      "source": "02-01",
+      "target": "01-00"
+    },
+    {
+      "source": "02-04",
+      "target": "01-00"
+    },
+    {
+      "source": "01-0",
+      "target": "01-000"
+    },
+    {
+      "source": "01-00",
+      "target": "01-000"
+    },
+    {
+      "source": "03-02",
+      "target": "01-000"
+    },
+    {
+      "source": "03-05",
+      "target": "01-000"
+    },
+    {
+      "source": "01-00",
+      "target": "01-01"
+    },
+    {
+      "source": "01-000",
+      "target": "01-01"
+    },
+    {
+      "source": "01-02",
+      "target": "01-01"
+    },
+    {
+      "source": "01-04",
+      "target": "01-01"
+    },
+    {
+      "source": "01-0",
+      "target": "01-02"
+    },
+    {
+      "source": "01-03",
+      "target": "01-02"
+    },
+    {
+      "source": "03-04",
+      "target": "01-02"
+    },
+    {
+      "source": "01-0",
+      "target": "01-03"
+    },
+    {
+      "source": "01-000",
+      "target": "01-03"
+    },
+    {
+      "source": "03-01",
+      "target": "01-03"
+    },
+    {
+      "source": "01-00",
+      "target": "01-04"
+    },
+    {
+      "source": "01-000",
+      "target": "01-04"
+    },
+    {
+      "source": "02-01",
+      "target": "01-04"
+    },
+    {
+      "source": "01-00",
+      "target": "02-02"
+    },
+    {
+      "source": "01-000",
+      "target": "02-02"
+    },
+    {
+      "source": "01-0",
+      "target": "02-03"
+    },
+    {
+      "source": "02-01",
+      "target": "02-03"
+    },
+    {
+      "source": "02-04",
+      "target": "02-03"
+    },
+    {
+      "source": "01-000",
+      "target": "03-02"
+    },
+    {
+      "source": "03-01",
+      "target": "03-02"
+    },
+    {
+      "source": "01-00",
+      "target": "03-03"
+    },
+    {
+      "source": "01-000",
+      "target": "03-03"
+    },
+    {
+      "source": "02-01",
+      "target": "03-03"
+    },
+    {
+      "source": "02-04",
+      "target": "03-03"
+    },
+    {
+      "source": "02-03",
+      "target": "03-04"
+    },
+    {
+      "source": "03-01",
+      "target": "03-04"
+    },
+    {
+      "source": "01-0",
+      "target": "03-05"
+    },
+    {
+      "source": "01-000",
+      "target": "03-05"
+    },
+    {
+      "source": "02-01",
+      "target": "03-05"
+    },
+    {
+      "source": "02-04",
+      "target": "03-05"
+    }
+  ],
+  "techlinkBenTo": [
+    {
+      "source": "01-0",
+      "target": "01-00"
+    },
+    {
+      "source": "01-0",
+      "target": "01-000"
+    },
+    {
+      "source": "01-0",
+      "target": "01-02"
+    },
+    {
+      "source": "01-0",
+      "target": "01-03"
+    },
+    {
+      "source": "01-0",
+      "target": "02-03"
+    },
+    {
+      "source": "01-0",
+      "target": "03-05"
+    },
+    {
+      "source": "01-00",
+      "target": "01-0"
+    },
+    {
+      "source": "01-00",
+      "target": "01-000"
+    },
+    {
+      "source": "01-00",
+      "target": "01-01"
+    },
+    {
+      "source": "01-00",
+      "target": "01-04"
+    },
+    {
+      "source": "01-00",
+      "target": "02-02"
+    },
+    {
+      "source": "01-00",
+      "target": "03-03"
+    },
+    {
+      "source": "01-000",
+      "target": "01-00"
+    },
+    {
+      "source": "01-000",
+      "target": "01-01"
+    },
+    {
+      "source": "01-000",
+      "target": "01-03"
+    },
+    {
+      "source": "01-000",
+      "target": "01-04"
+    },
+    {
+      "source": "01-000",
+      "target": "02-02"
+    },
+    {
+      "source": "01-000",
+      "target": "03-02"
+    },
+    {
+      "source": "01-000",
+      "target": "03-03"
+    },
+    {
+      "source": "01-000",
+      "target": "03-05"
+    },
+    {
+      "source": "01-02",
+      "target": "01-0"
+    },
+    {
+      "source": "01-02",
+      "target": "01-00"
+    },
+    {
+      "source": "01-02",
+      "target": "01-01"
+    },
+    {
+      "source": "01-03",
+      "target": "01-0"
+    },
+    {
+      "source": "01-03",
+      "target": "01-02"
+    },
+    {
+      "source": "01-04",
+      "target": "01-01"
+    },
+    {
+      "source": "02-01",
+      "target": "01-00"
+    },
+    {
+      "source": "02-01",
+      "target": "01-04"
+    },
+    {
+      "source": "02-01",
+      "target": "02-03"
+    },
+    {
+      "source": "02-01",
+      "target": "03-03"
+    },
+    {
+      "source": "02-01",
+      "target": "03-05"
+    },
+    {
+      "source": "02-03",
+      "target": "03-04"
+    },
+    {
+      "source": "02-04",
+      "target": "01-00"
+    },
+    {
+      "source": "02-04",
+      "target": "02-03"
+    },
+    {
+      "source": "02-04",
+      "target": "03-03"
+    },
+    {
+      "source": "02-04",
+      "target": "03-05"
+    },
+    {
+      "source": "03-01",
+      "target": "01-03"
+    },
+    {
+      "source": "03-01",
+      "target": "03-02"
+    },
+    {
+      "source": "03-01",
+      "target": "03-04"
+    },
+    {
+      "source": "03-02",
+      "target": "01-000"
+    },
+    {
+      "source": "03-04",
+      "target": "01-0"
+    },
+    {
+      "source": "03-05",
+      "target": "01-000"
+    }
+  ],
+  "firstTechToPhase": [
+    {
+      "source": "01-0",
+      "target": "DDN",
+      "whywhat": "4D Planning; Disaster Planning and Management"
+    },
+    {
+      "source": "01-00",
+      "target": "DOC",
+      "whywhat": "Visual analytics for decision-making"
+    },
+    {
+      "source": "01-00",
+      "target": "DFP",
+      "whywhat": "Visual analytics for decision-making; Generative design"
+    },
+    {
+      "source": "01-00",
+      "target": "DDN",
+      "whywhat": "Visual analytics for decision-making; Generative design"
+    },
+    {
+      "source": "01-00",
+      "target": "COM",
+      "whywhat": "Visual analytics for decision-making"
+    },
+    {
+      "source": "01-000",
+      "target": "VTS",
+      "whywhat": "Site Monitoring & Performance Evaluation"
+    },
+    {
+      "source": "01-000",
+      "target": "HTS",
+      "whywhat": "Site Monitoring & Performance Evaluation"
+    },
+    {
+      "source": "01-000",
+      "target": "DER",
+      "whywhat": "Site Monitoring & Performance Evaluation"
+    },
+    {
+      "source": "01-000",
+      "target": "MOM",
+      "whywhat": "Site Monitoring & Performance Evaluation"
+    },
+    {
+      "source": "01-000",
+      "target": "INS",
+      "whywhat": "Site Monitoring & Performance Evaluation"
+    },
+    {
+      "source": "01-000",
+      "target": "DWS",
+      "whywhat": "Site Monitoring & Performance Evaluation"
+    },
+    {
+      "source": "01-01",
+      "target": "DFP",
+      "whywhat": "Usability reviews with a virtual tour through the building site"
+    },
+    {
+      "source": "01-01",
+      "target": "DDN",
+      "whywhat": "Simulation of hazardous construction scenarios; Usability reviews with a virtual tour through the building site; Identifying spaces through virtual labelling"
+    },
+    {
+      "source": "01-01",
+      "target": "VTS",
+      "whywhat": "Virtual learning and training environment; Facilitating the logistics of materials and equipment on-site"
+    },
+    {
+      "source": "01-01",
+      "target": "HTS",
+      "whywhat": "Virtual learning and training environment; Facilitating the logistics of materials and equipment on-site"
+    },
+    {
+      "source": "01-01",
+      "target": "DER",
+      "whywhat": "Virtual learning and training environment; Progress monitoring"
+    },
+    {
+      "source": "01-01",
+      "target": "MOM",
+      "whywhat": "Virtual learning and training environment; Progress monitoring"
+    },
+    {
+      "source": "01-01",
+      "target": "INS",
+      "whywhat": "Progress monitoring"
+    },
+    {
+      "source": "01-02",
+      "target": "DDN",
+      "whywhat": "Emergency response planning and management"
+    },
+    {
+      "source": "01-02",
+      "target": "DER",
+      "whywhat": "Emergency response planning and management"
+    },
+    {
+      "source": "01-02",
+      "target": "MOM",
+      "whywhat": "Emergency response planning and management"
+    },
+    {
+      "source": "01-03",
+      "target": "SIS",
+      "whywhat": "Digital terrain survey and topography generation"
+    },
+    {
+      "source": "01-03",
+      "target": "SIC",
+      "whywhat": "Digital terrain survey and topography generation"
+    },
+    {
+      "source": "01-03",
+      "target": "DDN",
+      "whywhat": "Digital terrain survey and topography generation"
+    },
+    {
+      "source": "01-03",
+      "target": "VTS",
+      "whywhat": "Digital terrain survey and topography generation"
+    },
+    {
+      "source": "01-03",
+      "target": "HTS",
+      "whywhat": "Digital terrain survey and topography generation"
+    },
+    {
+      "source": "01-03",
+      "target": "DER",
+      "whywhat": "Monitoring and controlling construction site activities "
+    },
+    {
+      "source": "01-03",
+      "target": "MOM",
+      "whywhat": "Monitoring and controlling construction site activities "
+    },
+    {
+      "source": "01-03",
+      "target": "INS",
+      "whywhat": "Monitoring and controlling construction site activities; Comparison of as-planned vs. as-built"
+    },
+    {
+      "source": "01-04",
+      "target": "DFP",
+      "whywhat": "Predict outcomes; Test efficiency before construction"
+    },
+    {
+      "source": "01-04",
+      "target": "DDN",
+      "whywhat": "Predict outcomes; Test efficiency before construction"
+    },
+    {
+      "source": "01-04",
+      "target": "VTS",
+      "whywhat": "Replicate real-world scenarios"
+    },
+    {
+      "source": "01-04",
+      "target": "HTS",
+      "whywhat": "Replicate real-world scenarios"
+    },
+    {
+      "source": "01-04",
+      "target": "DER",
+      "whywhat": "Replicate real-world scenarios"
+    },
+    {
+      "source": "01-04",
+      "target": "MOM",
+      "whywhat": "Replicate real-world scenarios"
+    },
+    {
+      "source": "02-01",
+      "target": "COM",
+      "whywhat": "Integration of data from suppliers, carriers and contractors"
+    },
+    {
+      "source": "02-01",
+      "target": "LOG",
+      "whywhat": "Integration of data from suppliers, carriers and contractors"
+    },
+    {
+      "source": "02-02",
+      "target": "DFP",
+      "whywhat": "Quality assurance and quality control"
+    },
+    {
+      "source": "02-02",
+      "target": "DDN",
+      "whywhat": "Quality assurance and quality control"
+    },
+    {
+      "source": "02-03",
+      "target": "DOC",
+      "whywhat": "Setting one central data source for participants' access"
+    },
+    {
+      "source": "02-03",
+      "target": "DFP",
+      "whywhat": "Setting one central data source for participants' access"
+    },
+    {
+      "source": "02-03",
+      "target": "DDN",
+      "whywhat": "Setting one central data source for participants' access"
+    },
+    {
+      "source": "02-03",
+      "target": "COM",
+      "whywhat": "Setting one central data source for participants' access"
+    },
+    {
+      "source": "03-01",
+      "target": "DFP",
+      "whywhat": "Robot-oriented design of the building systems and components"
+    },
+    {
+      "source": "03-01",
+      "target": "DDN",
+      "whywhat": "Robot-oriented design of the building systems and components"
+    },
+    {
+      "source": "03-02",
+      "target": "VTS",
+      "whywhat": "On site environment monitoring; Localization for occupants and resources tracking"
+    },
+    {
+      "source": "03-02",
+      "target": "HTS",
+      "whywhat": "On site environment monitoring; Localization for occupants and resources tracking"
+    },
+    {
+      "source": "03-02",
+      "target": "DER",
+      "whywhat": "On site environment monitoring; Localization for occupants and resources tracking"
+    },
+    {
+      "source": "03-02",
+      "target": "MOM",
+      "whywhat": "On site environment monitoring; Localization for occupants and resources tracking"
+    },
+    {
+      "source": "03-02",
+      "target": "INS",
+      "whywhat": "Localization for occupants and resources tracking"
+    },
+    {
+      "source": "03-02",
+      "target": "INS",
+      "whywhat": "Localization for occupants and resources tracking"
+    },
+    {
+      "source": "03-03",
+      "target": "LOG",
+      "whywhat": "Component tracking and placement"
+    },
+    {
+      "source": "03-03",
+      "target": "DER",
+      "whywhat": "Bi-directional coordination between virtual models and physical construction"
+    },
+    {
+      "source": "03-03",
+      "target": "MOM",
+      "whywhat": "Bi-directional coordination between virtual models and physical construction"
+    },
+    {
+      "source": "03-03",
+      "target": "VTS",
+      "whywhat": "Real time monitoring system to check the use of equipment"
+    },
+    {
+      "source": "03-03",
+      "target": "HTS",
+      "whywhat": "Real time monitoring system to check the use of equipment"
+    },
+    {
+      "source": "03-04",
+      "target": "DER",
+      "whywhat": "Monitoring of construction site operations"
+    },
+    {
+      "source": "03-04",
+      "target": "MOM",
+      "whywhat": "Monitoring of construction site operations"
+    },
+    {
+      "source": "03-04",
+      "target": "INS",
+      "whywhat": "Inspection and quality control"
+    },
+    {
+      "source": "03-05",
+      "target": "VTS",
+      "whywhat": "Material and worker tracking; Real-time positioning; Collision-free path planning; Equipment performance measurement"
+    },
+    {
+      "source": "03-05",
+      "target": "HTS",
+      "whywhat": "Material and worker tracking; Real-time positioning; Collision-free path planning; Equipment performance measurement"
+    },
+    {
+      "source": "03-05",
+      "target": "DER",
+      "whywhat": "Fault detection and progress-monitoring; Material and worker tracking; Real-time health and safety results to construction personnel"
+    },
+    {
+      "source": "03-05",
+      "target": "MOM",
+      "whywhat": "Fault detection and progress-monitoring; Material and worker tracking; Real-time positioning; Real-time health and safety results to construction personnel"
+    },
+    {
+      "source": "03-05",
+      "target": "INS",
+      "whywhat": "Fault detection and progress-monitoring; Material and worker tracking"
+    },
+    {
+      "source": "03-05",
+      "target": "DWS",
+      "whywhat": "Real-time health and safety results to construction personnel"
+    }
+  ],
+  "secondTechToPhase": [
+    {
+      "source": "01-0",
+      "target": "DFP",
+      "whywhat": "Enhancing collaboration between stakeholders"
+    },
+    {
+      "source": "01-0",
+      "target": "DDN",
+      "whywhat": "Enhancing collaboration between stakeholders"
+    },
+    {
+      "source": "01-0",
+      "target": "COM",
+      "whywhat": "Enhancing collaboration between stakeholders"
+    },
+    {
+      "source": "01-00",
+      "target": "LOG",
+      "whywhat": "Improve logistics"
+    },
+    {
+      "source": "01-00",
+      "target": "LOF",
+      "whywhat": "Improve logistics"
+    },
+    {
+      "source": "01-000",
+      "target": "DFP",
+      "whywhat": "Optimization of construction collaboration"
+    },
+    {
+      "source": "01-000",
+      "target": "DDN",
+      "whywhat": "Improving planning; Optimization of construction collaboration"
+    },
+    {
+      "source": "01-000",
+      "target": "COM",
+      "whywhat": "Improving planning; Optimization of construction collaboration"
+    },
+    {
+      "source": "01-000",
+      "target": "LOG",
+      "whywhat": "Improving planning"
+    },
+    {
+      "source": "01-000",
+      "target": "LOF",
+      "whywhat": "Improving planning"
+    },
+    {
+      "source": "01-01",
+      "target": "DFP",
+      "whywhat": "Optimization of the projects to work interactively in real-time and at scale"
+    },
+    {
+      "source": "01-01",
+      "target": "DDN",
+      "whywhat": "Optimization of the projects to work interactively in real-time and at scale; Site layout optimization"
+    },
+    {
+      "source": "01-01",
+      "target": "COM",
+      "whywhat": "Optimization of the projects to work interactively in real-time and at scale; Site layout optimization"
+    },
+    {
+      "source": "01-01",
+      "target": "LOG",
+      "whywhat": "Optimization of the projects to work interactively in real-time and at scale; Site layout optimization"
+    },
+    {
+      "source": "01-01",
+      "target": "VTS",
+      "whywhat": "Site layout optimization"
+    },
+    {
+      "source": "01-01",
+      "target": "HTS",
+      "whywhat": "Site layout optimization"
+    },
+    {
+      "source": "01-04",
+      "target": "DDN",
+      "whywhat": "Improve project planning; Improve resource planning"
+    },
+    {
+      "source": "01-04",
+      "target": "COM",
+      "whywhat": "Improve project planning; Improve resource planning"
+    },
+    {
+      "source": "01-04",
+      "target": "LOG",
+      "whywhat": "Improve project planning"
+    },
+    {
+      "source": "02-01",
+      "target": "DFP",
+      "whywhat": "Improving collaboration"
+    },
+    {
+      "source": "02-01",
+      "target": "DDN",
+      "whywhat": "Improving collaboration"
+    },
+    {
+      "source": "02-01",
+      "target": "COM",
+      "whywhat": "Improving collaboration"
+    },
+    {
+      "source": "02-01",
+      "target": "VTS",
+      "whywhat": "Improvement of safety performance of construction sites"
+    },
+    {
+      "source": "02-01",
+      "target": "HTS",
+      "whywhat": "Improvement of safety performance of construction sites"
+    },
+    {
+      "source": "02-01",
+      "target": "DER",
+      "whywhat": "Improvement of safety performance of construction sites"
+    },
+    {
+      "source": "02-01",
+      "target": "MOM",
+      "whywhat": "Improvement of safety performance of construction sites"
+    },
+    {
+      "source": "02-01",
+      "target": "INS",
+      "whywhat": "Improvement of safety performance of construction sites"
+    },
+    {
+      "source": "02-01",
+      "target": "DWS",
+      "whywhat": "Improvement of safety performance of construction sites"
+    },
+    {
+      "source": "02-02",
+      "target": "APP",
+      "whywhat": "Automation of the review processes of engineering designs according to regulations and design codes"
+    },
+    {
+      "source": "02-04",
+      "target": "DOC",
+      "whywhat": "Improve the users' authority to control private data"
+    },
+    {
+      "source": "02-04",
+      "target": "DFP",
+      "whywhat": "Improve the users' authority to control private data"
+    },
+    {
+      "source": "02-04",
+      "target": "DDN",
+      "whywhat": "Improve the users' authority to control private data"
+    },
+    {
+      "source": "02-04",
+      "target": "COM",
+      "whywhat": "Improve the users' authority to control private data"
+    },
+    {
+      "source": "02-04",
+      "target": "VTS",
+      "whywhat": "Enhance the response speed of user request services"
+    },
+    {
+      "source": "02-04",
+      "target": "HTS",
+      "whywhat": "Enhance the response speed of user request services"
+    },
+    {
+      "source": "03-01",
+      "target": "SIC",
+      "whywhat": "Automate Site-Measuring and Construction Progress Monitoring"
+    },
+    {
+      "source": "03-01",
+      "target": "SIS",
+      "whywhat": "Automate Site-Measuring and Construction Progress Monitoring"
+    },
+    {
+      "source": "03-01",
+      "target": "INS",
+      "whywhat": "Automate Site-Measuring and Construction Progress Monitoring"
+    }
+  ]
+}

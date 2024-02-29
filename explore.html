@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+
+      /* .outputText {
+        position: absolute;
+      } */
+    </style>
+
+    <title>Sonja's EngD Project</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- <script async src="script.js"></script> -->
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="Wall-e logo" src="useAsLogo.png" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="index.html">Home</a></li>
+          <li>
+            <a class="main-nav-link" href="about_the_project.html"
+              >About The Project</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link" href="methodology.html">Methodology</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="framework_description.html"
+              >Framework Description</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link nav-cta" href="explore.html">Explore</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="info-box"></div>
+
+    <div class="textRenProcess-box field-text">
+      Section A:<br />
+      Field of Renovation Process
+    </div>
+
+    <div class="textConnection-box field-text">Section C</div>
+
+    <div class="textFieldTech-box field-text">
+      Section B:<br />Field of <br />
+      Automation & Robotic <br />Technologies
+    </div>
+
+    <div class="legendTech-box">
+      <p class="legendTech-text">Legend for links between A&R Technologies:</p>
+      <p class="legendTech-text reqFor-text">
+        <strong> Requirement For</strong> other A&R Technology
+      </p>
+      <p class="legendTech-text reqTo-text">
+        <strong> Requirement To</strong> other A&R Technology
+      </p>
+      <p class="legendTech-text benFrom-text">
+        <strong> Benefit From</strong> other A&R Technology
+      </p>
+      <p class="legendTech-text benTo-text">
+        <strong>Benefit To</strong> other A&R Technology
+      </p>
+    </div>
+
+    <div class="phase"></div>
+    <!-- <div class="tech"></div> -->
+
+    <div class="outputWindow">
+      <span class="outputText"></span>
+    </div>
+
+    <!-- Import D3 -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+    <!-- <script type="module" src="d3script.js"></script> -->
+    <!-- Custom JS -->
+    <script type="module" src="scriptD3example.js"></script>
+    <!-- <script type="module" src="scriptD3tech.js"></script> -->
+
+    <!-- Import navigation menu -->
+    <script src="navbar.js"></script>
+  </body>
+</html>

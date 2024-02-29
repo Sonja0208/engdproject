@@ -1,0 +1,194 @@
+{
+  "phase": [
+    {
+      "id": "INT",
+      "name": "Initiation of the project"
+    },
+    {
+      "id": "DOC",
+      "name": "Documentation of current situation"
+    },
+    {
+      "id": "SIC",
+      "name": "Site Inspection Contractor"
+    },
+    {
+      "id": "SIS",
+      "name": "Site Inspection Subcontractor"
+    },
+    {
+      "id": "DFP",
+      "name": "Design for Permits"
+    },
+    {
+      "id": "APP",
+      "name": "Apply for Permits"
+    },
+    {
+      "id": "DDN",
+      "name": "Detailed Design of new situation"
+    },
+    {
+      "id": "COM",
+      "name": "Communication with the contractor/subcontractors"
+    },
+    {
+      "id": "LOG",
+      "name": "Logistics/Transport to site"
+    },
+    {
+      "id": "VTS",
+      "name": "Vertical transport on site"
+    },
+    {
+      "id": "HTS",
+      "name": "Horizontal transport on site"
+    },
+    {
+      "id": "DER",
+      "name": "Dismantling existing roof"
+    },
+    {
+      "id": "MOM",
+      "name": "Mounting modules"
+    },
+    {
+      "id": "INS",
+      "name": "Inspection"
+    },
+    {
+      "id": "DWS",
+      "name": "Demolishing workshop"
+    },
+    {
+      "id": "LOF",
+      "name": "Logistics/Transport FROM site"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INT",
+      "target": "DOC"
+    },
+    {
+      "source": "INT",
+      "target": "SIS"
+    },
+    {
+      "source": "INT",
+      "target": "SIC"
+    },
+    {
+      "source": "DOC",
+      "target": "DFP"
+    },
+    {
+      "source": "SIC",
+      "target": "DFP"
+    },
+    {
+      "source": "SIS",
+      "target": "DFP"
+    },
+    {
+      "source": "DFP",
+      "target": "APP"
+    },
+    {
+      "source": "SIC",
+      "target": "DDN"
+    },
+    {
+      "source": "SIS",
+      "target": "DDN"
+    },
+    {
+      "source": "DFP",
+      "target": "DDN"
+    },
+    {
+      "source": "APP",
+      "target": "DDN"
+    },
+    {
+      "source": "DDN",
+      "target": "COM"
+    },
+    {
+      "source": "COM",
+      "target": "LOG"
+    },
+    {
+      "source": "SIC",
+      "target": "VTS"
+    },
+    {
+      "source": "SIS",
+      "target": "VTS"
+    },
+    {
+      "source": "DDN",
+      "target": "VTS"
+    },
+    {
+      "source": "LOG",
+      "target": "VTS"
+    },
+    {
+      "source": "SIC",
+      "target": "HTS"
+    },
+    {
+      "source": "SIS",
+      "target": "HTS"
+    },
+    {
+      "source": "DDN",
+      "target": "HTS"
+    },
+    {
+      "source": "LOG",
+      "target": "HTS"
+    },
+    {
+      "source": "VTS",
+      "target": "DER"
+    },
+    {
+      "source": "HTS",
+      "target": "DER"
+    },
+    {
+      "source": "VTS",
+      "target": "MOM"
+    },
+    {
+      "source": "HTS",
+      "target": "MOM"
+    },
+    {
+      "source": "DER",
+      "target": "MOM"
+    },
+    {
+      "source": "VTS",
+      "target": "INS"
+    },
+    {
+      "source": "MOM",
+      "target": "INS"
+    },
+    {
+      "source": "INS",
+      "target": "DWS"
+    },
+    {
+      "source": "LOG",
+      "target": "LOF"
+    },
+    {
+      "source": "DWS",
+      "target": "LOF"
+    }
+  ]
+}

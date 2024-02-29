@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D3 SVG Object Hover</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+      svg {
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+
+      #outputWindow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outputWindow">
+      Hovered Attribute: <span id="outputText"></span>
+    </div>
+
+    <script>
+      // Sample array of objects with attributes
+      const myObjects = [
+        {
+          attribute1: "Value 1",
+          attribute2: "Value 2",
+          attribute3: "Value 3",
+        },
+        {
+          attribute1: "Another Value 1",
+          attribute2: "Another Value 2",
+          attribute3: "Another Value 3",
+        },
+        // Add more objects as needed
+      ];
+
+      // Function to create SVG using D3 for an array of objects
+      function createSVGFromObjects(objects) {
+        const svg = d3
+          .select("body")
+          .append("svg")
+          .attr("width", 200)
+          .attr("height", 100);
+
+        objects.forEach((obj, index) => {
+          let y = 20 * index;
+          for (const key in obj) {
+            if (obj.hasOwnProperty(key)) {
+              svg
+                .append("text")
+                .attr("x", 10)
+                .attr("y", y)
+                .text(key)
+                .on("mouseover", handleMouseOver)
+                .on("mouseout", handleMouseOut);
+
+              y += 20;
+            }
+          }
+        });
+
+        return svg.node();
+      }
+
+      // Function to handle mouseover event on SVG
+      function handleMouseOver() {
+        const hoveredAttribute = d3.select(this).text();
+        const hoveredValue = getHoveredValue(hoveredAttribute);
+        d3.select("#outputText").text(`${hoveredAttribute}: ${hoveredValue}`);
+        d3.select("#outputWindow").style("display", "block");
+      }
+
+      // Function to handle mouseout event on SVG
+      function handleMouseOut() {
+        d3.select("#outputWindow").style("display", "none");
+      }
+
+      // Function to get the value of the attribute to be displayed
+      function getHoveredValue(attribute) {
+        // Modify this logic based on your requirement
+        // Here, we assume the attribute name is modified by adding "Modified" to it
+        return myObject[attribute + "Modified"] || "N/A";
+      }
+
+      // Create SVG and append to the body using D3 for the array of objects
+      const svgNode = createSVGFromObjects(myObjects);
+    </script>
+  </body>
+</html>

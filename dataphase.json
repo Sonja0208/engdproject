@@ -1,0 +1,401 @@
+{
+  "phase": [
+    {
+      "id": "INT",
+      "name": "Initiation of the project",
+      "requirements": "<br>Individual or company to initiate the project",
+      "functions": " <br> To deliver: <br> Location of the house for renovation <br> Kadaster number of the house"
+    },
+    {
+      "id": "DOC",
+      "name": "Documentation of current situation",
+      "requirements": "<br>Location of the house for Kadaster online platform <br> Possession of any drawings of existing situation from Kadaster",
+      "functions": "<br> To deliver: <br> Information regarding existence  and format of drawings<br> CAD drawing of existing conditions"
+    },
+    {
+      "id": "SIC",
+      "name": "Site Inspection Contractor",
+      "requirements": "<br>Location of the house and permission for inspection of the roof structure",
+      "functions": "<br> To deliver: <br> Dimensions and state of existing roof structure"
+    },
+    {
+      "id": "SIS",
+      "name": "Site Inspection Subcontractor",
+      "requirements": "  <br>Location of the house and permission for inspection of the roof structure",
+      "functions": "<br> To deliver: <br> Dimensions and state of existing roof structure"
+    },
+    {
+      "id": "DFP",
+      "name": "Design for Permits",
+      "requirements": "<br>CAD drawing of the existing situation <br> Information from site inspection",
+      "functions": "<br> To deliver: <br>CAD drawing of new situation for application for permits"
+    },
+    {
+      "id": "APP",
+      "name": "Application for Permits",
+      "requirements": "<br> CAD drawing of new situation for application for permits",
+      "functions": "<br> To deliver: <br>Approved permission for renovation"
+    },
+    {
+      "id": "DDN",
+      "name": "Detailed Design of new situation",
+      "requirements": "<br> CAD drawing of new situation from application for permits <br> Approved permit <br> Details about the site from inspection",
+      "functions": "<br> To deliver: <br>Detailed technical documentation of new situation and details for mounting <br>Bill of material <br> Site utilization for renovation"
+    },
+    {
+      "id": "COM",
+      "name": "Communication with the contractor/subcontractors",
+      "requirements": "<br>Bill of material ",
+      "functions": "<br>To deliver information regarding:<br>Subcontractors responsible for transport and installation on site <br>To secure order of required material and tools for activities on site"
+    },
+    {
+      "id": "LOG",
+      "name": "Logistics/Transport to site",
+      "requirements": "<br>Date and time for delivery to site  ",
+      "functions": "<br>To deliver material and equipment to site"
+    },
+    {
+      "id": "VTS",
+      "name": "Vertical transport on site",
+      "requirements": "<br>Access to the front or side of the house<br>Delivery of equipment for vertical transport  <br>Security of operators for working on height",
+      "functions": "<br>To elevate and support workers and materials"
+    },
+    {
+      "id": "HTS",
+      "name": "Horizontal transport on site",
+      "requirements": "<br>Dedicated area on site for operating <br>Delivery of equipment for horizontal transport  ",
+      "functions": "<br>To handle and operate material on the ground"
+    },
+    {
+      "id": "DER",
+      "name": "Dismantling existing roof",
+      "requirements": "<br>Vertical transport of the operator to roof height and removing roof shingles <br>Horizontal transport of roof shingles to storage",
+      "functions": "<br>To prepare roof for mounting of modules"
+    },
+    {
+      "id": "MOM",
+      "name": "Mounting modules",
+      "requirements": "<br>Modules delivered to site <br>Vertical transport of the operator and modules <br> transport of modules <br>Placement and details for mounting ",
+      "functions": "<br>To place modules on the roof"
+    },
+    {
+      "id": "INS",
+      "name": "Inspection",
+      "requirements": "<br>Finished renovation of the roof and access to it from outside and/or inside",
+      "functions": "<br>To inspect the system and give approval for the finished project"
+    },
+    {
+      "id": "DWS",
+      "name": "Demolishing workshop",
+      "requirements": "<br>Inspection finished and approval for dismantling the equipment",
+      "functions": "<br>To clean up the site"
+    },
+    {
+      "id": "LOF",
+      "name": "Logistics/Transport FROM site",
+      "requirements": "<br>Date and time for pickup from site",
+      "functions": "<br>To remove material from site"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "INT",
+      "target": "DOC"
+    },
+    {
+      "source": "INT",
+      "target": "SIS"
+    },
+    {
+      "source": "INT",
+      "target": "SIC"
+    },
+    {
+      "source": "DOC",
+      "target": "DFP"
+    },
+    {
+      "source": "SIC",
+      "target": "DFP"
+    },
+    {
+      "source": "SIS",
+      "target": "DFP"
+    },
+    {
+      "source": "DFP",
+      "target": "APP"
+    },
+    {
+      "source": "SIC",
+      "target": "DDN"
+    },
+    {
+      "source": "SIS",
+      "target": "DDN"
+    },
+    {
+      "source": "DFP",
+      "target": "DDN"
+    },
+    {
+      "source": "APP",
+      "target": "DDN"
+    },
+    {
+      "source": "DDN",
+      "target": "COM"
+    },
+    {
+      "source": "COM",
+      "target": "LOG"
+    },
+    {
+      "source": "SIC",
+      "target": "VTS"
+    },
+    {
+      "source": "SIS",
+      "target": "VTS"
+    },
+    {
+      "source": "DDN",
+      "target": "VTS"
+    },
+    {
+      "source": "DDN",
+      "target": "HTS"
+    },
+    {
+      "source": "LOG",
+      "target": "VTS"
+    },
+    {
+      "source": "SIC",
+      "target": "HTS"
+    },
+    {
+      "source": "SIS",
+      "target": "HTS"
+    },
+    {
+      "source": "DDN",
+      "target": "HTS"
+    },
+    {
+      "source": "LOG",
+      "target": "HTS"
+    },
+    {
+      "source": "VTS",
+      "target": "DER"
+    },
+    {
+      "source": "HTS",
+      "target": "DER"
+    },
+    {
+      "source": "VTS",
+      "target": "MOM"
+    },
+    {
+      "source": "HTS",
+      "target": "MOM"
+    },
+    {
+      "source": "DER",
+      "target": "MOM"
+    },
+    {
+      "source": "VTS",
+      "target": "INS"
+    },
+    {
+      "source": "MOM",
+      "target": "INS"
+    },
+    {
+      "source": "MOM",
+      "target": "DDN"
+    },
+    {
+      "source": "INS",
+      "target": "DWS"
+    },
+    {
+      "source": "LOG",
+      "target": "LOF"
+    },
+    {
+      "source": "DWS",
+      "target": "LOF"
+    }
+  ],
+  "phaseToTech": [
+    {
+      "source": "DOC",
+      "target": "01-0",
+      "whywhat": "Existing Conditions"
+    },
+    {
+      "source": "DOC",
+      "target": "01-02",
+      "whywhat": "Cadastre and land use planning"
+    },
+    {
+      "source": "DOC",
+      "target": "02-01",
+      "whywhat": "Providing real-time access to data and storage for acquired data"
+    },
+    {
+      "source": "SIC",
+      "target": "01-02",
+      "whywhat": "Site inspection management"
+    },
+    {
+      "source": "SIC",
+      "target": "01-03",
+      "whywhat": "Obtain geometric properties of objects and their spatial location; Generate digital reconstruction; Obtain information from the site"
+    },
+    {
+      "source": "SIC",
+      "target": "02-01",
+      "whywhat": "Providing real-time access to data and storage for acquired data"
+    },
+    {
+      "source": "SIC",
+      "target": "02-04",
+      "whywhat": "Relieve pressure of network bandwidth and data center"
+    },
+    {
+      "source": "SIC",
+      "target": "03-04",
+      "whywhat": "3D modeling and mapping"
+    },
+    {
+      "source": "SIS",
+      "target": "01-02",
+      "whywhat": "Site inspection management"
+    },
+    {
+      "source": "SIS",
+      "target": "01-03",
+      "whywhat": "Obtain geometric properties of objects and their spatial location; Generate digital reconstruction; Obtain information from the site"
+    },
+    {
+      "source": "SIS",
+      "target": "02-01",
+      "whywhat": "Providing real-time access to data and storage for acquired data"
+    },
+    {
+      "source": "SIS",
+      "target": "02-04",
+      "whywhat": "Relieve pressure of network bandwidth and data center"
+    },
+    {
+      "source": "SIS",
+      "target": "03-04",
+      "whywhat": "3D modeling and mapping"
+    },
+    {
+      "source": "DFP",
+      "target": "01-0",
+      "whywhat": "Design Authoring; Design Review; Coordination"
+    },
+    {
+      "source": "DFP",
+      "target": "01-000",
+      "whywhat": "Design Authoring"
+    },
+    {
+      "source": "DFP",
+      "target": "02-01",
+      "whywhat": "Providing real-time access to data and storage for acquired data"
+    },
+    {
+      "source": "DFP",
+      "target": "02-04",
+      "whywhat": "Relieve pressure of network bandwidth and data center"
+    },
+    {
+      "source": "APP",
+      "target": "01-0",
+      "whywhat": "Regulation Checking and Code Compliance"
+    },
+    {
+      "source": "APP",
+      "target": "01-000",
+      "whywhat": "Audit systems"
+    },
+    {
+      "source": "APP",
+      "target": "02-02",
+      "whywhat": "Processes of control and monitoring of construction projects and asset management"
+    },
+    {
+      "source": "DDN",
+      "target": "01-0",
+      "whywhat": "Design Authoring; Design Review; Coordination"
+    },
+    {
+      "source": "DDN",
+      "target": "01-000",
+      "whywhat": "Design; Cost Estimation; Material Management"
+    },
+    {
+      "source": "DDN",
+      "target": "01-02",
+      "whywhat": "Planning of disassembling process"
+    },
+    {
+      "source": "DDN",
+      "target": "02-01",
+      "whywhat": "Providing real-time access to data and storage for acquired data"
+    },
+    {
+      "source": "DDN",
+      "target": "02-04",
+      "whywhat": "Relieve pressure of network bandwidth and data center"
+    },
+    {
+      "source": "COM",
+      "target": "01-0",
+      "whywhat": "Cost Estimating; Asset Management; Project schedule"
+    },
+    {
+      "source": "COM",
+      "target": "01-000",
+      "whywhat": "Cost Estimating;Project Planning"
+    },
+    {
+      "source": "LOG",
+      "target": "01-02",
+      "whywhat": "Navigation and routing"
+    },
+    {
+      "source": "VTS",
+      "target": "03-01",
+      "whywhat": "Material handling and elevation"
+    },
+    {
+      "source": "HTS",
+      "target": "03-01",
+      "whywhat": "Material handling and transport on ground"
+    },
+    {
+      "source": "DER",
+      "target": "03-01",
+      "whywhat": "Mechanical support to worker's body; Helping workers to lift heavy loads"
+    },
+    {
+      "source": "MOM",
+      "target": "03-01",
+      "whywhat": "Mechanical support to worker's body; Helping workers to lift heavy loads"
+    },
+    {
+      "source": "LOF",
+      "target": "01-02",
+      "whywhat": "Navigation and routing"
+    }
+  ]
+}
