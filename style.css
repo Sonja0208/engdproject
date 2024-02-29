@@ -116,7 +116,7 @@ body {
 
 .textRenProcess-box {
   position: absolute;
-  top: 40%;
+  top: 300px;
   left: 20px;
   padding: 10px;
   /* width: 400px; */
@@ -128,7 +128,7 @@ body {
 
 .textConnection-box {
   position: absolute;
-  top: 54%;
+  top: 400px;
   left: 20px;
   padding: 10px;
   /* width: 400px; */
@@ -140,7 +140,7 @@ body {
 
 .textFieldTech-box {
   position: absolute;
-  top: 68%;
+  top: 500px;
   left: 20px;
   padding: 10px;
   /* width: 400px; */
