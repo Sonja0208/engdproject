@@ -692,10 +692,10 @@ for (const t1ToP of firstTechToPhaseLink) {
     .attr("y2", link1_y2);
 }
 
-const lines2 = d3.selectAll(".techOneLink");
+const lines2 = d3.selectAll(".techTwoLink");
 lines2.style("display", "none");
 
-const lines3 = d3.selectAll(".techTwoLink");
+const lines3 = d3.selectAll(".techOneLink");
 lines3.style("display", "none");
 
 d3.select(window).on("keydown", function (event) {
