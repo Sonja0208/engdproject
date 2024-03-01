@@ -910,16 +910,6 @@
       "whywhat": "Setting one central data source for participants' access"
     },
     {
-      "source": "03-01",
-      "target": "DFP",
-      "whywhat": "Robot-oriented design of the building systems and components"
-    },
-    {
-      "source": "03-01",
-      "target": "DDN",
-      "whywhat": "Robot-oriented design of the building systems and components"
-    },
-    {
       "source": "03-02",
       "target": "VTS",
       "whywhat": "On site environment monitoring; Localization for occupants and resources tracking"
