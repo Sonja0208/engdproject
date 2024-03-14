@@ -11,7 +11,7 @@ const div = d3.selectAll("div");
 const data = await d3.json("dataphase.json");
 const phases = data.phase;
 const relationships = data.relationships;
-const phasesToTech = data.phaseToTech;
+const firstLinkTechToPhase = data.firstLinkTechToPhase;
 
 const dataTech = await d3.json("datatech.json");
 const technology = dataTech.technology;
@@ -19,8 +19,7 @@ const techLinkReqFor = dataTech.techlinkReqFor;
 const techLinkReqTo = dataTech.techlinkReqTo;
 const techLinkBenFrom = dataTech.techlinkBenFrom;
 const techLinkBenTo = dataTech.techlinkBenTo;
-const firstTechsToPhase = dataTech.firstTechToPhase;
-const secondTechsToPhase = dataTech.secondTechToPhase;
+const secondTechsToPhase = dataTech.secondLinkTechToPhase;
 
 // CREATING TASK NODES AS OBJECTS
 const phaseNodes = phases.map(({ id, name, requirements, functions }) => ({
@@ -97,25 +96,21 @@ const bensTo = techLinkBenTo.map(({ source, target }) => ({
   target: techById.get(target),
 }));
 
-// CREATING OBJECTS FOR LINKING PHASE TO TECHNOLOGY
-const phaseToTechLink = phasesToTech.map(({ source, target }) => ({
-  sourcePhase: phaseById.get(source),
-  targetTechnology: techById.get(target),
-}));
-
-// CREATING OBJECTS FOR 1. LINK TECHNOLOGY TO PHASE
-const firstTechToPhaseLink = firstTechsToPhase.map(({ source, target }) => ({
-  sourceTechnology: techById.get(source),
-  targetPhase: phaseById.get(target),
-}));
-// console.log(firstTechToPhaseLink);
+// CREATING OBJECTS FOR 1. LINK PHASE TO TECHNOLOGY
+const firstLinkTechToPhaseLink = firstLinkTechToPhase.map(
+  ({ source, target }) => ({
+    sourcePhase: phaseById.get(source),
+    targetTechnology: techById.get(target),
+  })
+);
 
 // CREATING OBJECTS FOR 2. LINK TECHNOLOGY TO PHASE
-const secondTechToPhaseLink = secondTechsToPhase.map(({ source, target }) => ({
-  sourceTechnology: techById.get(source),
-  targetPhase: phaseById.get(target),
-}));
-// console.log(secondTechToPhaseLink);
+const secondLinkTechToPhaseLink = secondTechsToPhase.map(
+  ({ source, target }) => ({
+    sourceTechnology: techById.get(source),
+    targetPhase: phaseById.get(target),
+  })
+);
 
 const graphEl = function () {
   for (const link of links) {
@@ -611,17 +606,17 @@ svg
   .attr("stroke", "#fae3a0")
   .attr("stroke-width", 2);
 
-// LINK BETWEEN PHASE AND TECHNOLOGY - 1. Link type
+// 1. LINK BETWEEN PHASE AND TECHNOLOGY - FUNCTIONS AND IMPROVEMENTS
 
-for (const ptoT of phaseToTechLink) {
-  const pToTStart = ptoT.sourcePhase;
+for (const p1toT of firstLinkTechToPhaseLink) {
+  const p1ToTStart = p1toT.sourcePhase;
   // console.log(pToTStart);
-  const link1_x1 = pToTStart.x;
+  const link1_x1 = p1ToTStart.x;
   const link1_y1 = height;
 
-  const pToTEnd = ptoT.targetTechnology;
+  const p1ToTEnd = p1toT.targetTechnology;
   // console.log(pToTEnd);
-  const link1_x2 = pToTEnd.x1;
+  const link1_x2 = p1ToTEnd.x1;
   const link1_y2 = height1;
   const linesPtoT = svg
     .append("line")
@@ -630,6 +625,7 @@ for (const ptoT of phaseToTechLink) {
     // .attr("stroke", "#ccc")
     .attr("class", "funcLink")
     .style("stroke", "#96f2d7")
+
     .style("stroke-width", 2)
     .attr("x1", link1_x1)
     .attr("y1", link1_y1)
@@ -640,9 +636,9 @@ for (const ptoT of phaseToTechLink) {
 const lines1 = d3.selectAll(".funcLink");
 lines1.style("display", "none");
 
-// 2. LINK BETWEEN TECHNOLOGY AND PHASE - OPTIMIZATIONS
+// 2. LINK BETWEEN TECHNOLOGY AND PHASE - NEW TASKS
 
-for (const t2ToP of secondTechToPhaseLink) {
+for (const t2ToP of secondLinkTechToPhaseLink) {
   const t2ToPStart = t2ToP.sourceTechnology;
   const link1_x1 = t2ToPStart.x1;
   const link1_y1 = height1;
@@ -656,8 +652,10 @@ for (const t2ToP of secondTechToPhaseLink) {
     .style("fill", "none")
     // .attr("stroke-opacity", 0.6)
     // .attr("stroke", "#ccc")
-    .style("stroke", "#1864ab")
+    // .style("stroke", "#1864ab")
+    .style("stroke", "#f783ac")
     .style("stroke-width", 2)
+    // .style("stroke", "#999")
     // .style("stroke-dasharray", "15")
     .attr("class", "techTwoLink")
     .attr("x1", link1_x1)
@@ -666,37 +664,8 @@ for (const t2ToP of secondTechToPhaseLink) {
     .attr("y2", link1_y2);
 }
 
-// 3. LINK BETWEEN TECHNOLOGY AND PHASE - NEW TASKS
-
-for (const t1ToP of firstTechToPhaseLink) {
-  const t1ToPStart = t1ToP.sourceTechnology;
-  const link1_x1 = t1ToPStart.x1;
-  const link1_y1 = height1;
-
-  const t1ToPEnd = t1ToP.targetPhase;
-  const link1_x2 = t1ToPEnd.x;
-  const link1_y2 = height;
-
-  const linesTtoPFirst = svg
-    .append("line")
-    .style("stroke", "#f783ac")
-    .style("stroke-width", 2)
-    // .style("stroke-dasharray", "30")
-    .attr("fill", "none")
-    // .attr("stroke-opacity", 0.6)
-    // .attr("stroke", "#ccc")
-    .attr("class", "techOneLink")
-    .attr("x1", link1_x1)
-    .attr("y1", link1_y1)
-    .attr("x2", link1_x2)
-    .attr("y2", link1_y2);
-}
-
-const lines2 = d3.selectAll(".techOneLink");
+const lines2 = d3.selectAll(".techTwoLink");
 lines2.style("display", "none");
-
-const lines3 = d3.selectAll(".techTwoLink");
-lines3.style("display", "none");
 
 d3.select(window).on("keydown", function (event) {
   if (event.key === "1") {
@@ -709,12 +678,52 @@ d3.select(window).on("keydown", function (event) {
   } else if (event.key === "0") {
     lines2.style("display", "none");
   }
-  if (event.key === "3") {
-    lines3.style("display", "block");
-  } else if (event.key === "0") {
-    lines3.style("display", "none");
-  }
 });
+
+const rect1 = svg
+  .append("rect")
+  .attr("x", 375)
+  .attr("y", 10)
+  .attr("width", 320)
+  .attr("height", 250)
+  .attr("stroke", "#f06595")
+  .attr("fill", "none");
+
+const rect2 = svg
+  .append("rect")
+  .attr("x", 700)
+  .attr("y", 10)
+  .attr("width", 250)
+  .attr("height", 250)
+  .attr("stroke", "#40c057")
+  .attr("fill", "none");
+
+const rect3 = svg
+  .append("rect")
+  .attr("x", 275)
+  .attr("y", 400)
+  .attr("width", 350)
+  .attr("height", 400)
+  .attr("stroke", "#22b8cf")
+  .attr("fill", "none");
+
+const rect4 = svg
+  .append("rect")
+  .attr("x", 630)
+  .attr("y", 400)
+  .attr("width", 195)
+  .attr("height", 400)
+  .attr("stroke", "#d6336c")
+  .attr("fill", "none");
+
+const rect5 = svg
+  .append("rect")
+  .attr("x", 830)
+  .attr("y", 400)
+  .attr("width", 250)
+  .attr("height", 400)
+  .attr("stroke", "#868e96")
+  .attr("fill", "none");
 
 // console.log(path);
 // console.log(requirementsFor);

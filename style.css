@@ -160,6 +160,53 @@ body {
   font-size: 1.2rem;
 }
 
+.rect1-text {
+  color: #f06595;
+  position: absolute;
+  top: 130px;
+  left: 485px;
+  font-size: 1.5rem;
+}
+
+.rect2-text {
+  color: #40c057;
+  position: absolute;
+  top: 130px;
+  left: 780px;
+  font-size: 1.5rem;
+}
+
+.rect3-text {
+  color: #22b8cf;
+  position: absolute;
+  text-align: center;
+  top: 850px;
+  left: 400px;
+  font-size: 1.5rem;
+}
+
+.rect4-text {
+  color: #d6336c;
+  position: absolute;
+  text-align: center;
+  top: 850px;
+  left: 680px;
+  font-size: 1.5rem;
+}
+
+.rect5-text {
+  color: #868e96;
+  position: absolute;
+  top: 860px;
+  left: 880px;
+  font-size: 1.5rem;
+}
+
+.parts-text {
+  font-size: 1.2rem;
+  color: #adb5bd;
+}
+
 .reqFor-text {
   color: #c92a2a;
 }
