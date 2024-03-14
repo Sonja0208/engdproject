@@ -15,13 +15,13 @@
     {
       "id": "SIC",
       "name": "Site Inspection Contractor",
-      "requirements": "<br>Location of the house and permission for inspection of the roof structure",
+      "requirements": "<br>Location of the house <br> Permission for inspection of the roof structure <br> Access to the roof both from inside and outside of the house",
       "functions": "<br> To deliver: <br> Dimensions and state of existing roof structure"
     },
     {
       "id": "SIS",
       "name": "Site Inspection Subcontractor",
-      "requirements": "  <br>Location of the house and permission for inspection of the roof structure",
+      "requirements": "<br>Location of the house <br> Permission for inspection of the roof structure <br> Access to the roof both from inside and outside of the house",
       "functions": "<br> To deliver: <br> Dimensions and state of existing roof structure"
     },
     {
@@ -231,7 +231,7 @@
       "target": "LOF"
     }
   ],
-  "phaseToTech": [
+  "firstLinkTechToPhase": [
     {
       "source": "DOC",
       "target": "01-0",
@@ -300,22 +300,22 @@
     {
       "source": "DFP",
       "target": "01-0",
-      "whywhat": "Design Authoring; Design Review; Coordination"
+      "whywhat": "Design Authoring; Design Review; Coordination; Enhancing collaboration between stakeholders"
     },
     {
       "source": "DFP",
       "target": "01-000",
-      "whywhat": "Design Authoring"
+      "whywhat": "Design Authoring; Enhancing collaboration"
     },
     {
       "source": "DFP",
       "target": "02-01",
-      "whywhat": "Providing real-time access to data and storage for acquired data"
+      "whywhat": "Providing real-time access to data and storage for acquired data; Improving collaboration"
     },
     {
       "source": "DFP",
       "target": "02-04",
-      "whywhat": "Relieve pressure of network bandwidth and data center"
+      "whywhat": "Relieve pressure of network bandwidth and data center; Improve the users' authority to control private data"
     },
     {
       "source": "APP",
@@ -396,6 +396,176 @@
       "source": "LOF",
       "target": "01-02",
       "whywhat": "Navigation and routing"
+    },
+    {
+      "source": "DDN",
+      "target": "01-0",
+      "whywhat": "Enhancing collaboration between stakeholders"
+    },
+    {
+      "source": "COM",
+      "target": "01-0",
+      "whywhat": "Enhancing collaboration between stakeholders"
+    },
+    {
+      "source": "LOG",
+      "target": "01-00",
+      "whywhat": "Improve logistics"
+    },
+    {
+      "source": "LOF",
+      "target": "01-00",
+      "whywhat": "Improve logistics"
+    },
+    {
+      "source": "DDN",
+      "target": "01-000",
+      "whywhat": "Improving planning; Optimization of construction collaboration"
+    },
+    {
+      "source": "COM",
+      "target": "01-000",
+      "whywhat": "Improving planning; Optimization of construction collaboration"
+    },
+    {
+      "source": "LOG",
+      "target": "01-000",
+      "whywhat": "Improving planning"
+    },
+    {
+      "source": "LOF",
+      "target": "01-000",
+      "whywhat": "Improving planning"
+    },
+    {
+      "source": "DFP",
+      "target": "01-01",
+      "whywhat": "Optimization of the projects to work interactively in real-time and at scale"
+    },
+    {
+      "source": "DDN",
+      "target": "01-01",
+      "whywhat": "Optimization of the projects to work interactively in real-time and at scale; Site layout optimization"
+    },
+    {
+      "source": "COM",
+      "target": "01-01",
+      "whywhat": "Optimization of the projects to work interactively in real-time and at scale; Site layout optimization"
+    },
+    {
+      "source": "LOG",
+      "target": "01-01",
+      "whywhat": "Optimization of the projects to work interactively in real-time and at scale; Site layout optimization"
+    },
+    {
+      "source": "VTS",
+      "target": "01-01",
+      "whywhat": "Site layout optimization"
+    },
+    {
+      "source": "HTS",
+      "target": "01-01",
+      "whywhat": "Site layout optimization"
+    },
+    {
+      "source": "DDN",
+      "target": "01-04",
+      "whywhat": "Improve project planning; Improve resource planning"
+    },
+    {
+      "source": "COM",
+      "target": "01-04",
+      "whywhat": "Improve project planning; Improve resource planning"
+    },
+    {
+      "source": "LOG",
+      "target": "01-04",
+      "whywhat": "Improve project planning"
+    },
+    {
+      "source": "DDN",
+      "target": "02-01",
+      "whywhat": "Improving collaboration"
+    },
+    {
+      "source": "COM",
+      "target": "02-01",
+      "whywhat": "Improving collaboration"
+    },
+    {
+      "source": "VTS",
+      "target": "02-01",
+      "whywhat": "Improvement of safety performance of construction sites by providing timely access to safety information"
+    },
+    {
+      "source": "HTS",
+      "target": "02-01",
+      "whywhat": "Improvement of safety performance of construction sites by providing timely access to safety information"
+    },
+    {
+      "source": "DER",
+      "target": "02-01",
+      "whywhat": "Improvement of safety performance of construction sites by providing timely access to safety information"
+    },
+    {
+      "source": "MOM",
+      "target": "02-01",
+      "whywhat": "Improvement of safety performance of construction sites by providing timely access to safety information"
+    },
+    {
+      "source": "INS",
+      "target": "02-01",
+      "whywhat": "Improvement of safety performance of construction sites by providing timely access to safety information"
+    },
+    {
+      "source": "DWS",
+      "target": "02-01",
+      "whywhat": "Improvement of safety performance of construction sites by providing timely access to safety information"
+    },
+    {
+      "source": "APP",
+      "target": "02-02",
+      "whywhat": "Automation of the review processes of engineering designs according to regulations and design codes"
+    },
+    {
+      "source": "DOC",
+      "target": "02-04",
+      "whywhat": "Improve the users' authority to control private data"
+    },
+    {
+      "source": "DDN",
+      "target": "02-04",
+      "whywhat": "Improve the users' authority to control private data"
+    },
+    {
+      "source": "COM",
+      "target": "02-04",
+      "whywhat": "Improve the users' authority to control private data"
+    },
+    {
+      "source": "VTS",
+      "target": "02-04",
+      "whywhat": "Enhance the response speed of user request services"
+    },
+    {
+      "source": "HTS",
+      "target": "02-04",
+      "whywhat": "Enhance the response speed of user request services"
+    },
+    {
+      "source": "SIC",
+      "target": "03-01",
+      "whywhat": "Automate Site-Measuring and Construction Progress Monitoring"
+    },
+    {
+      "source": "SIS",
+      "target": "03-01",
+      "whywhat": "Automate Site-Measuring and Construction Progress Monitoring"
+    },
+    {
+      "source": "INS",
+      "target": "03-01",
+      "whywhat": "Automate Site-Measuring and Construction Progress Monitoring"
     }
   ]
 }

@@ -40,9 +40,9 @@
       "id": "01-02",
       "cluster": "01 Simulation and Modelling",
       "name": "Geographic information system",
-      "definition": "Geographic Information System (GIS) is a computer-based tool used for capturing, storing, quarrying, analyzing and displaying the geographic information. GIS activities may be grouped into spatial and attribute data management, data display, data exploration, data analysis and modeling (V. K. Bansal, 2007). Spatial or spatio-temporal statistical modelling for the analysis of patterns and exploration of relationships, which are primarily collected by geodesy methods. One of the primary products of ﬁeld geodesy work is topographic maps with large spatial scales indicating terrain characteristics, infrastructure, buildings and land cover. After digitization of topographic maps, spatial data depicting  natural attributes become data layers of GIS (Song et al., 2017).",
+      "definition": "Geographic Information System (GIS) is a computer-based tool used for capturing, storing, querying, analyzing and displaying the geographic information. GIS activities may be grouped into spatial and attribute data management, data display, data exploration, data analysis and modeling (V. K. Bansal, 2007). Spatial or spatio-temporal statistical modelling for the analysis of patterns and exploration of relationships, which are primarily collected by geodesy methods. One of the primary products of ﬁeld geodesy work is topographic maps with large spatial scales indicating terrain characteristics, infrastructure, buildings and land cover. After digitization of topographic maps, spatial data depicting  natural attributes become data layers of GIS (Song et al., 2017).",
       "general_requirements": "<br>Computer system<br> GIS software <br> Trained workforce <br> Required level and amount of building information in the geospatial environment <br> City Geography Markup Language (CityGML) or similar standards",
-      "functions": "<br> Capturing geographic information <br> Storing geographic information <br> Quarrying geographic information <br> Analyzing geographic information <br> Displaying the geographic information <br> Photo documentation",
+      "functions": "<br> Capturing geographic information <br> Storing geographic information <br> Querying geographic information <br> Analyzing geographic information <br> Displaying the geographic information <br> Photo documentation",
       "examples": " <br> ArcGIS <br> QGIS 3 <br> Hexagon Geomedia <br> MapInfo Professional"
     },
     {
@@ -693,7 +693,7 @@
       "target": "01-000"
     }
   ],
-  "firstTechToPhase": [
+  "secondLinkTechToPhase": [
     {
       "source": "01-0",
       "target": "DDN",
@@ -1008,198 +1008,6 @@
       "source": "03-05",
       "target": "DWS",
       "whywhat": "Real-time health and safety results to construction personnel"
-    }
-  ],
-  "secondTechToPhase": [
-    {
-      "source": "01-0",
-      "target": "DFP",
-      "whywhat": "Enhancing collaboration between stakeholders"
-    },
-    {
-      "source": "01-0",
-      "target": "DDN",
-      "whywhat": "Enhancing collaboration between stakeholders"
-    },
-    {
-      "source": "01-0",
-      "target": "COM",
-      "whywhat": "Enhancing collaboration between stakeholders"
-    },
-    {
-      "source": "01-00",
-      "target": "LOG",
-      "whywhat": "Improve logistics"
-    },
-    {
-      "source": "01-00",
-      "target": "LOF",
-      "whywhat": "Improve logistics"
-    },
-    {
-      "source": "01-000",
-      "target": "DFP",
-      "whywhat": "Optimization of construction collaboration"
-    },
-    {
-      "source": "01-000",
-      "target": "DDN",
-      "whywhat": "Improving planning; Optimization of construction collaboration"
-    },
-    {
-      "source": "01-000",
-      "target": "COM",
-      "whywhat": "Improving planning; Optimization of construction collaboration"
-    },
-    {
-      "source": "01-000",
-      "target": "LOG",
-      "whywhat": "Improving planning"
-    },
-    {
-      "source": "01-000",
-      "target": "LOF",
-      "whywhat": "Improving planning"
-    },
-    {
-      "source": "01-01",
-      "target": "DFP",
-      "whywhat": "Optimization of the projects to work interactively in real-time and at scale"
-    },
-    {
-      "source": "01-01",
-      "target": "DDN",
-      "whywhat": "Optimization of the projects to work interactively in real-time and at scale; Site layout optimization"
-    },
-    {
-      "source": "01-01",
-      "target": "COM",
-      "whywhat": "Optimization of the projects to work interactively in real-time and at scale; Site layout optimization"
-    },
-    {
-      "source": "01-01",
-      "target": "LOG",
-      "whywhat": "Optimization of the projects to work interactively in real-time and at scale; Site layout optimization"
-    },
-    {
-      "source": "01-01",
-      "target": "VTS",
-      "whywhat": "Site layout optimization"
-    },
-    {
-      "source": "01-01",
-      "target": "HTS",
-      "whywhat": "Site layout optimization"
-    },
-    {
-      "source": "01-04",
-      "target": "DDN",
-      "whywhat": "Improve project planning; Improve resource planning"
-    },
-    {
-      "source": "01-04",
-      "target": "COM",
-      "whywhat": "Improve project planning; Improve resource planning"
-    },
-    {
-      "source": "01-04",
-      "target": "LOG",
-      "whywhat": "Improve project planning"
-    },
-    {
-      "source": "02-01",
-      "target": "DFP",
-      "whywhat": "Improving collaboration"
-    },
-    {
-      "source": "02-01",
-      "target": "DDN",
-      "whywhat": "Improving collaboration"
-    },
-    {
-      "source": "02-01",
-      "target": "COM",
-      "whywhat": "Improving collaboration"
-    },
-    {
-      "source": "02-01",
-      "target": "VTS",
-      "whywhat": "Improvement of safety performance of construction sites"
-    },
-    {
-      "source": "02-01",
-      "target": "HTS",
-      "whywhat": "Improvement of safety performance of construction sites"
-    },
-    {
-      "source": "02-01",
-      "target": "DER",
-      "whywhat": "Improvement of safety performance of construction sites"
-    },
-    {
-      "source": "02-01",
-      "target": "MOM",
-      "whywhat": "Improvement of safety performance of construction sites"
-    },
-    {
-      "source": "02-01",
-      "target": "INS",
-      "whywhat": "Improvement of safety performance of construction sites"
-    },
-    {
-      "source": "02-01",
-      "target": "DWS",
-      "whywhat": "Improvement of safety performance of construction sites"
-    },
-    {
-      "source": "02-02",
-      "target": "APP",
-      "whywhat": "Automation of the review processes of engineering designs according to regulations and design codes"
-    },
-    {
-      "source": "02-04",
-      "target": "DOC",
-      "whywhat": "Improve the users' authority to control private data"
-    },
-    {
-      "source": "02-04",
-      "target": "DFP",
-      "whywhat": "Improve the users' authority to control private data"
-    },
-    {
-      "source": "02-04",
-      "target": "DDN",
-      "whywhat": "Improve the users' authority to control private data"
-    },
-    {
-      "source": "02-04",
-      "target": "COM",
-      "whywhat": "Improve the users' authority to control private data"
-    },
-    {
-      "source": "02-04",
-      "target": "VTS",
-      "whywhat": "Enhance the response speed of user request services"
-    },
-    {
-      "source": "02-04",
-      "target": "HTS",
-      "whywhat": "Enhance the response speed of user request services"
-    },
-    {
-      "source": "03-01",
-      "target": "SIC",
-      "whywhat": "Automate Site-Measuring and Construction Progress Monitoring"
-    },
-    {
-      "source": "03-01",
-      "target": "SIS",
-      "whywhat": "Automate Site-Measuring and Construction Progress Monitoring"
-    },
-    {
-      "source": "03-01",
-      "target": "INS",
-      "whywhat": "Automate Site-Measuring and Construction Progress Monitoring"
     }
   ]
 }
